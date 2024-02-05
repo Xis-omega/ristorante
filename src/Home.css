@@ -1,0 +1,128 @@
+.Corpo {
+    position: relative;
+    overflow: none;
+    width: 100%;
+    height: 1000px;
+}
+
+.Corpo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(assets/sfondo.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 20%;
+}
+
+.contenitore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.scritta {
+    position: relative;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    float: right;
+    position: relative;
+    height: 100%;
+    width: 400px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    font-size: 20px;
+    margin-left: 60px;
+    background-color: orange;
+    backdrop-filter: contrast(70%);
+    padding: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.prenota-border {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: solid 3px white;
+    animation-name: bordo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: 0.5s;
+}
+
+.prenota-border:hover {
+    border: solid 3px orange;
+}
+
+.btn:hover {
+    background-color: transparent;
+    border: solid 3px white;
+    backdrop-filter: blur(5px);
+}
+
+@keyframes bordo {
+    0%{
+        transform: rotateZ(0deg);
+    }
+
+    10%{
+        transform: rotateZ(40deg);
+    }
+
+    20%{
+        transform: rotateZ(80deg);
+    }
+
+    30%{
+        transform: rotateZ(120deg);
+    }
+
+    40%{
+        transform: rotateZ(160deg);
+    }
+
+    50%{
+        transform: rotateZ(200deg);
+    }
+
+    60%{
+        transform: rotateZ(240deg);
+    }
+
+    70%{
+        transform: rotateZ(280deg);
+    }
+
+    80%{
+        transform: rotateZ(320deg);
+    }
+
+    90%{
+        transform: rotateZ(360deg);
+    }
+
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+

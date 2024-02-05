@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+}
+
+.Logo {
+    width: 150px;
+    float: left;
+}
+
+.Book, .Home, .About, .Service{
+    display: flex;
+    float: right;
+    list-style: none;
+    visibility: visible;
+    margin: 20px;
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: arial;
+    position: relative;
+}
+
+.Book {
+    background-color: orange;
+    border-radius: 0;
+    border: orange solid;
+}
+
+.Book:hover {
+    box-shadow: 14px, 5px, rgba(255, 102, 0, 0.1);
+    background-color: transparent;
+    transform: scale(1.1);
+}
+
+.Home:hover, .About:hover, .Service:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+a:hover {
+    color: orange;
+}
+
+.Home::before, .About::before, .Service::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: orange;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.Home:hover::before, .About:hover::before, .Service:hover::before {
+    animation: change 0.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes change {
+    0%{
+        top: auto;
+    }
+    
+    10%{
+        top: 40px;
+    }
+
+    20%{
+        top: 35px;
+    }
+
+    30%{
+        top: 30px;
+    }
+
+    40%{
+        top: 25px;
+    }
+
+    50%{
+        top: 20px;
+    }
+
+    60%{
+        top: 15px;
+    }
+
+    70%{
+        top: 10px;
+    }
+
+    80%{
+        top: 5px;
+    }
+
+    90%{
+        top: 2px;
+    }
+
+    100%{
+        top: 0;
+    }
+}
+
+nav{
+    height: 80px;
+    background-color: black;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    margin-top: 1%;
+    margin-left: 3%;
+    font-family: "Brush Script MT", cursive;
+    font-size: 40px;
+    color: white;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.873);
+}
+

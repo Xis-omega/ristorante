@@ -1,0 +1,9 @@
+.Menu{
+    width: 100%;
+    margin-top: 100px;
+    color: white;
+    font-family: cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
